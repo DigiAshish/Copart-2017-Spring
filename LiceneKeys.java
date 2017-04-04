@@ -1,4 +1,12 @@
 //package com.AshishMAC;
+/*
+ * To accept a software license key and a value for k and partition the string with dashes
+ */
+
+/**
+ * git 
+ * @author Ashish
+ */
 
 import java.util.Scanner;
 
@@ -10,9 +18,12 @@ public class LiceneKeys {
 			int count=0;String ProcessedString="";
 			in = new Scanner(System.in);
 			System.out.println("Enter the value for s");
-			String License=in.next().toUpperCase();
+			//license key which we would like to format
+			String License=in.next().toUpperCase(); //Lowercase letters converted to uppercase.
 			System.out.println("Enter the value for k");
+			//K decides how to devide each group of characters
 			int k=in.nextInt();
+			//Devide the string and store it in a character
 			char[] charArray = License.toCharArray();
 			System.out.println(License);
 			for(int i=0;i<License.length();i++)
